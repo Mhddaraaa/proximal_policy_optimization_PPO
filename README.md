@@ -2,10 +2,10 @@
 
 # __Table of content__
 [Usage](#usage)<br>
-[Vanilla policy gradient(VPG)](#vanilla-policy-gradient-vpg)<br>
-[Kullback-Liebler divergence (KL divergence)](#kullback--liebler-divergence-kl-divergence)<br>
+[Vanilla policy gradient (VPG)](#vanilla-policy-gradient-vpg)<br>
+[Kullback-Liebler divergence (KL divergence)](#kullback-liebler-divergence-kl-divergence)<br>
 [Clipping objective](#clipping-objective)<br>
-[Dynamic KL Penalty](#dynamic-kl-penalty])<br>
+[Dynamic KL Penalty](#dynamic-kl-penalty)<br>
 
 
 
