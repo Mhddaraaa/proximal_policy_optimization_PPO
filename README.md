@@ -3,7 +3,9 @@
 # __Table of content__
 [Usage](#usage)<br>
 [Vanilla policy gradient(VPG)](#vanilla-policy-gradient-vpg)<br>
-[Kullback-Liebler divergence (KL divergence)](kullback--liebler-divergence-kl-divergence)<br>
+[Kullback-Liebler divergence (KL divergence)](#kullback--liebler-divergence-kl-divergence)<br>
+[Clipping objective](#clipping-objective)<br>
+[Dynamic KL Penalty](#dynamic-kl-penalty])<br>
 
 
 
@@ -300,7 +302,8 @@ Taylor Expansion of KL-Divergence
 
 <br>
 
-- **Clipping objective**:
+### Clipping objective
+
 
 $$
 \large J(\pi_\theta \| \pi_\theta^{\text{old}}) =
@@ -350,9 +353,9 @@ $$
 J(\pi_\theta \| \pi_\theta^{\text{old}}) = \text{min} \Biggl( \frac{\pi_\theta(a|s)}{\pi_{\theta_{\text{old}}}(a|s)} , (1 - \epsilon)\Biggr) *  A^{\pi_{\theta_{\text{old}}}}(s, a)
 $$
 
-## **Dynamic KL Penalty**:
+### Dynamic KL Penalty
 
-<img align='center' width='1000' src="https://github.com/Mhddaraaa/proximal_policy_optimization_PPO/blob/main/taylor_%20Expansion.png">
+<img align='center' width='1000' src="https://github.com/Mhddaraaa/proximal_policy_optimization_PPO/blob/main/dynamic_KL_penalty.png">
 
 $$
 \begin{split}
