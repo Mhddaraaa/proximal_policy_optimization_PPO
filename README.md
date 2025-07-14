@@ -46,25 +46,7 @@ L = \left[ \frac{\pi_\theta(a|s)}{\pi_{\theta_{\text{old}}}(a|s)} f(a) \right]
 $$
 
 So, now we have this:
-<img align='center' width='1000' src="">
-
-$$
-\mathcal{L}(\theta, \lambda) = \mathbb{E}_{a \sim \pi_{\theta_{\text{old}}}} \left[ \frac{\pi_\theta(a|s)}{\pi_{\theta_{\text{old}}}(a|s)} A^{\pi_{\theta_{\text{old}}}}(s, a) \right] - \lambda \left( \mathbb{E}_{a \sim \pi_{\theta_{\text{old}}}} \left[ \frac{\pi_\theta(a|s)}{\pi_{\theta_{\text{old}}}(a|s)} \log \frac{\pi_\theta(a|s)}{\pi_{\theta_{\text{old}}}(a|s)} \right] - \delta \right)
-$$
-
-- Simplifying:
-     1. The term $-\lambda \delta$ is constant for optimization over $\theta$, so it can be ignored during gradient updates.
-     2. For simplicity, if we approximate the KL-divergence constraint $D_{\text{KL}}(\pi_\theta \| \pi_{\theta_{\text{old}}}) \leq \delta$ with a penalty-free optimization (no explicit $\lambda$), we focus only on the first term:
-
-1.
-$$
-\mathcal{L}(\theta, \lambda) = \mathbb{E}_{a \sim \pi_{\theta_{\text{old}}}} \left[ \frac{\pi_\theta(a|s)}{\pi_{\theta_{\text{old}}}(a|s)} \left( A^{\pi_{\theta_{\text{old}}}}(s, a) - \lambda \log \frac{\pi_\theta(a|s)}{\pi_{\theta_{\text{old}}}(a|s)} \right) \right].
-$$
-
-2.
-$$
-\mathcal{L}(\theta) = \mathbb{E}_{a \sim \pi_{\theta_{\text{old}}}} \left[ \frac{\pi_\theta(a|s)}{\pi_{\theta_{\text{old}}}(a|s)} A^{\pi_{\theta_{\text{old}}}}(s, a) \right].
-$$
+<img align='center' width='1000' src="https://github.com/Mhddaraaa/proximal_policy_optimization_PPO/blob/main/lagrange.png">
 
 ---
 ---
@@ -104,15 +86,7 @@ $$
 
 Taylor Expansion of KL-Divergence
 
-The KL-divergence can be approximated using a first-order Taylor expansion:
-$$
-D_{\text{KL}}(\pi_\theta \| \pi_{\theta_{\text{old}}}) \approx \frac{1}{2} \mathbb{E}_{a \sim \pi_{\theta_{\text{old}}}} \left[ \left( \frac{\pi_\theta(a|s)}{\pi_{\theta_{\text{old}}}(a|s)} - 1 \right)^2 \right].
-$$
-
-Substituting this into the **penalized objective**, the optimization becomes:
-$$
-\mathbb{E}_{a \sim \pi_{\theta_{\text{old}}}} \left[ \frac{\pi_\theta(a|s)}{\pi_{\theta_{\text{old}}}(a|s)} A^{\pi_{\theta_{\text{old}}}}(s, a) \right] - \beta \frac{1}{2} \mathbb{E}_{a \sim \pi_{\theta_{\text{old}}}} \left[ \left( \frac{\pi_\theta(a|s)}{\pi_{\theta_{\text{old}}}(a|s)} - 1 \right)^2 \right].
-$$
+<img align='center' width='1000' src="https://github.com/Mhddaraaa/proximal_policy_optimization_PPO/blob/main/lagrange.png">
 
 <br>
 
