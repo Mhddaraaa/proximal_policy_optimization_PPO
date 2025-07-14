@@ -1,11 +1,20 @@
 # **proximal_policy_optimization_PPO**
 
 # __Table of content__
-[Usage](#usage)<br>
-[Vanilla policy gradient (VPG)](#vanilla-policy-gradient-vpg)<br>
-[Kullback-Liebler divergence (KL divergence)](#kullback-liebler-divergence-kl-divergence)<br>
-[Clipping objective](#clipping-objective)<br>
-[Dynamic KL Penalty](#dynamic-kl-penalty)<br>
+
+<ul>
+  <li><a href="#usage">Usage</a></li>
+  <li><a href="#vanilla-policy-gradient-vpg">Vanilla policy gradient (VPG)</a></li>
+  <li><a href="#kullback-liebler-divergence-kl-divergence">Kullback-Liebler divergence (KL divergence)</a>
+    <ul>
+      <li><a href="#example-for-discrete-distribution">Example for discrete distribution</a></li>
+      <li><a href="#how-we-get-there">How we get there</a></li>
+      <li><a href="#add-the-new-term-to-derivarive">Add the new term to derivarive</a></li>
+    </ul>
+  </li>
+  <li><a href="#clipping-objective">Clipping objective</a></li>
+  <li><a href="#dynamic-kl-penalty">Dynamic KL Penalty</a></li>
+</ul>
 
 
 
@@ -116,7 +125,7 @@ $$
 <br>
 
 ---
-- ### **Example for discrete distribution**
+- ### Example for discrete distribution
 
 $$
 P(x) = \left[ \frac{1}{3}, \frac{1}{3}, \frac{1}{3} \right]\\
