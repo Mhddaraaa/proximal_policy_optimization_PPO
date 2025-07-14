@@ -3,7 +3,7 @@
 # __Table of content__
 [Usage](#usage)<br>
 [Vanilla policy gradient(VPG)](#vanilla-policy-gradient-vpg)<br>
-[Kullback-Liebler divergence (KL-divergence)](kullback--liebler-divergence-kl--divergence)<br>
+[Kullback-Liebler divergence (KL divergence)](kullback--liebler-divergence-kl-divergence)<br>
 
 
 
@@ -46,7 +46,7 @@ The gradient evaluate old policy based on $\theta$ parameter and update it based
 
 <br>
 
-## Kullback-Liebler divergence (KL-divergence)
+## Kullback-Liebler divergence (KL divergence)
 
 it is a measure of how one probability distribution $Q$ (*the approximate distribution*) differs from a second, reference probability distribution $P$ (*the true distribution*).
 
