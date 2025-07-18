@@ -14,8 +14,8 @@
   </li>
   <li><a href="#clipping-objective">Clipping objective</a></li>
   <li><a href="#dynamic-kl-penalty">Dynamic KL Penalty</a></li>
+  <li><a href="#model-output">Model output</a></li>
 </ul>
-
 
 
 ## Usage
@@ -388,3 +388,18 @@ $$
 $$
 
 ---
+
+## Model output
+
+### Cartpole environment without bootstrapping
+<img align='center' width='1000' src="https://github.com/Mhddaraaa/proximal_policy_optimization_PPO/blob/main/cartpole.png">
+
+### Cartpole environment wit bootstrapping
+<img align='center' width='1000' src="https://github.com/Mhddaraaa/proximal_policy_optimization_PPO/blob/main/cartpole_bootstrapping.png">
+
+### LunarLander environment without bootstrapping
+<img align='center' width='1000' src="https://github.com/Mhddaraaa/proximal_policy_optimization_PPO/blob/main/lunarLander.png">
+
+### LunarLander environment with bootstrapping
+<img align='center' width='1000' src="https://github.com/Mhddaraaa/proximal_policy_optimization_PPO/blob/main/lunarLander_bootstrapping.png">
+
