@@ -20,6 +20,11 @@
 
 ## Usage
 
+**install dependencies**
+```sh
+pip install -r requirements.txt
+```
+
 **Run a discrete env with pretrained models**
 
 ```python
@@ -402,4 +407,8 @@ $$
 
 ### LunarLander environment with bootstrapping
 <img align='center' width='1000' src="https://github.com/Mhddaraaa/proximal_policy_optimization_PPO/blob/main/lunarLander_bootstrapping.png">
+
+<br>
+
+> If you like to check references and find other RL algorithms implemetations check the [link](https://github.com/Mhddaraaa/start/tree/main/ReinforcementLearning)
 
