@@ -1,6 +1,9 @@
 # **proximal_policy_optimization_PPO**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![Repo size](https://img.shields.io/github/repo-size/Mhddaraaa/proximal_policy_optimization_PPO)
+![Last Commit](https://img.shields.io/github/last-commit/Mhddaraaa/proximal_policy_optimization_PPO)
 
 # __Table of content__
 
