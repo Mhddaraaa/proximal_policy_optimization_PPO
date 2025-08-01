@@ -1,5 +1,7 @@
 # **proximal_policy_optimization_PPO**
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 # __Table of content__
 
 <ul>
