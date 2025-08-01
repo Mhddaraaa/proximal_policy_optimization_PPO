@@ -8,6 +8,7 @@
 # __Table of content__
 
 <ul>
+  <li><a href="#overview">Overview</a></li>
   <li><a href="#usage">Usage</a></li>
   <li><a href="#vanilla-policy-gradient-vpg">Vanilla policy gradient (VPG)</a></li>
   <li><a href="#kullback-liebler-divergence-kl-divergence">Kullback-Liebler divergence (KL divergence)</a>
@@ -21,6 +22,17 @@
   <li><a href="#dynamic-kl-penalty">Dynamic KL Penalty</a></li>
   <li><a href="#model-output">Model output</a></li>
 </ul>
+
+
+## Overview
+
+This repository implements **Proximal Policy Optimization (PPO)** from scratch using PyTorch. It supports both **discrete** and **continuous** environments from OpenAI Gym such as `CartPole-v1` and `LunarLanderContinuous-v3`.
+
+The code includes:
+- Pretrained models
+- Modular design for policy/value networks
+- KL-divergence and clipping objectives
+- Mathematical explanations and diagrams
 
 
 ## Usage
