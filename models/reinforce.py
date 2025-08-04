@@ -52,6 +52,7 @@ class REINFORCE():
         self.policy_loss = []
         self.value_loss = []
         self.update_steps = update_steps
+        self.best_reward = float('-inf')
 
         if model_path:
             self.load(model_path)
@@ -144,9 +145,8 @@ class REINFORCE():
             pbar.set_description(f"α Neural network: {round(self.network.policy_optimizer.param_groups[0]['lr'], 6)} |"
                                  f" Avg Reward: {avg_reward:.2f}")
 
-            best_reward = float('-inf')
-            if self.total_reward_episode[self.epi - 1] > best_reward:
-                best_reward = self.total_reward_episode[self.epi - 1]
+            if self.total_reward_episode[self.epi - 1] > self.best_reward:
+                self.best_reward = self.total_reward_episode[self.epi - 1]
 
                 torch.save(
                     {
